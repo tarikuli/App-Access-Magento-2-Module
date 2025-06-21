@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Studio3Marketing\AppAccess\Api\AppLoginManagementInterface"
+                type="Studio3Marketing\AppAccess\Model\AppLoginManagement"/>
+    <type name="Magento\Customer\Controller\Account\LoginPost">
+        <plugin name="Studio3Marketing_AppAccess_LoginPost"
+                type="Studio3Marketing\AppAccess\Plugin\Frontend\Magento\Customer\Controller\Account\LoginPost"
+                sortOrder="10" disabled="false"/>
+    </type>
+</config>

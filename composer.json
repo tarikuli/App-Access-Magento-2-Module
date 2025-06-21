@@ -1,0 +1,22 @@
+{
+    "name": "studio3marketing/module-appaccess",
+    "description": "Mobile App access.",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Tarikul Islam",
+            "email": "tarikuli@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Studio3Marketing\\AppAccess\\": ""
+        }
+    }
+}
